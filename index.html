@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        function myFunction() {
+            document.getElementById("demoFive").innerHTML = "Paragraph changed.";
+        }
+    </script>
+</head>
+<body>
+
+<!--Lesson 04: JS Statements--->
+<h1 class="lesson">Lesson 04: JS Statements</h1>
+
+
+<hr>
+
+<!--Lesson 03: JS Syntax--->
+<h1 class="lesson">Lesson 03: JS Syntax</h1>
+
+<p>Statements are separated by semicolons.</p>
+<p>The variables x, y and z are assigned the values 5, 6, 11</p>
+<p>Then the value of z is displayed in the paragraph below</p>
+
+<p id="variablesDemo"></p>
+<script>
+    var x, y, z;
+    x = 5;
+    y = 6;
+    z = x + y;
+    document.getElementById("variablesDemo").innerHTML = z;
+</script>
+
+<h2>JavasScript Values</h2>
+<p>Numbers: can be written with or without decimal</p>
+<p id="demoNumbers"></p>
+<script>document.getElementById("demoNumbers").innerHTML = 10.50</script>
+
+<h2>JavaScript Strings</h2>
+<p>Strings can be written with double and single quotes.</p>
+<p id="demoStringSingle"></p>
+<p id="demoStringDouble"></p>
+<script>document.getElementById("demoStringSingle").innerHTML = 'John Doe: using single';</script>
+<script>document.getElementById("demoStringDouble").innerHTML = "John Doe: using double";</script>
+
+
+<hr>
+
+<!--Lesson 02: JS Output--->
+<h1 class="lesson">Lesson 02: JS Output</h1>
+
+<h2>Using innerHTML</h2>
+<p>Display the logic of 5 + 6</p>
+<p id="innerDemo"></p>
+
+<script>
+    document.getElementById("innerDemo").innerHTML = 5+6;
+</script>
+
+<h2>Using document.write()</h2>
+<p>Display the logic of 7 + 3</p>
+<script>document.write(7+3);</script>
+
+<h2>After a document is loaded...and delete existing HTML</h2>
+<p>Display the logic of 12 * 3</p>
+<button onclick="document.write(12*3)">Try the maths!</button>
+
+<h2>Using window.alert()</h2>
+<p>Display the logic of 15 / 5</p>
+<!--
+<script>window.alert(15/5);</script>
+-->
+
+<h2>Using console.log()</h2>
+<script>console.log(12*12);</script>
+
+<hr>
+
+<!--Lesson 01: JS Where To--->
+<h1 class="lesson">Lesson 01: JS Where To</h1>
+
+<h2>JavaScript in body.</h2>
+
+<p id="demoFour"></p>
+<button type="button" onclick="myFunctionTwo()">Try it First</button>
+
+<script>
+    document.getElementById("demoFour").innerHTML = "My First JavaScript<br>";
+    function myFunctionTwo() {
+        document.getElementById("demoFour").innerHTML = "Paragraph changed";
+    }
+</script>
+
+<h2>A web page(king of)</h2>
+<p id="demoFive">A paragraph</p>
+<button type="button" onclick="myFunction()">Try it Second</button>
+
+<!--External JavaScript-->
+
+<h2>External JS file</h2>
+<p id="demoSix">Before the external change</p>
+<button type="button" onclick="myFirstFunction()">Try it to load ext file</button>
+<script src="js/myFirstScript.js"></script>
+
+<hr>
+<!--Lesson 00: Introduction--->
+<h1 class="lesson">Lesson 00: Introduction</h1>
+
+<h2>What can Javascript Do?</h2>
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML
+= "Hello JavaScript"'>Click Me!</button>
+
+<p>In this case JavaScript changes the src attributes of an image.</p>
+<button onclick="document.getElementById('myImage').src ='images/pic_bulbon.gif'">
+    Turn on the light
+</button>
+<img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src = 'images/pic_bulboff.gif'">
+    Turn off the light.
+</button>
+
+<p id="demoTwo">JavaScript can change the style of an HTML element.</p>
+<button type="button"
+        onclick="document.getElementById('demoTwo').style.fontSize='35px'">
+    Click Me!
+</button>
+<br>
+
+<p id="demoThree">JavaScript can hide HTML elements.</p>
+<button type="button"
+        onclick="document.getElementById('demoThree').style.display='none'">
+    Click me
+</button>
+<button type="button"
+        onclick="document.getElementById('demoThree').style.display='block'">
+    Click on me!
+</button>
+
+</body>
+</html>
