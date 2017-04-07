@@ -13,8 +13,36 @@
 </head>
 <body>
 
+<!--Lesson 10: JS Data Types--->
+<h1 class="lesson">Lesson 10: JS Data Types</h1>
+
+<p>When adding a number and a string, JavaScript will treat the number as a string</p>
+<p id="demo1001"></p>
+<script>
+    var x = 16 +"Volvo";
+    document.getElementById("demo1001").innerHTML = x;
+</script>
+
+<
+<hr>
 <!--Lesson 04: JS Statements--->
 <h1 class="lesson">Lesson 04: JS Statements</h1>
+
+<p>JavaScript statements are separated by semicolons</p>
+
+<p id="demo0401"></p>
+<p>Show the answer when you carry out the following a(1) + b(3)</p>
+<p id="demo0402"></p>
+<script>
+    var a, b, c;
+    a = 1;
+    b = 3;
+    c = 5;
+    d = a + b;
+    document.getElementById("demo0401").innerHTML = c;
+    document.getElementById("demo0402").innerHTML = d;
+
+</script>
 
 
 <hr>
@@ -50,6 +78,9 @@
 
 <hr>
 
+
+
+
 <!--Lesson 02: JS Output--->
 <h1 class="lesson">Lesson 02: JS Output</h1>
 
@@ -63,11 +94,11 @@
 
 <h2>Using document.write()</h2>
 <p>Display the logic of 7 + 3</p>
-<script>document.write(7+3);</script>
+<script>document.write(7 + 3);</script>
 
 <h2>After a document is loaded...and delete existing HTML</h2>
 <p>Display the logic of 12 * 3</p>
-<button onclick="document.write(12*3)">Try the maths!</button>
+<button onclick="document.write(12 * 3)">Try the maths!</button>
 
 <h2>Using window.alert()</h2>
 <p>Display the logic of 15 / 5</p>
