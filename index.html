@@ -12,8 +12,36 @@
 </head>
 <body>
 	
-	<!--Lesson 12: JS Scope--->
+	<!--Lesson 14: JS Events--->
+	<h1 class="lesson">Lesson 14: JS Events</h1>
+		
+	
+	<hr>
+	
+	<!--Lesson 13: JS Scope--->
 	<h1 class="lesson">Lesson 13: JS Scope</h1>
+	
+	<p id="demo1301">fdsfds</p>
+	<script>
+		myFunction();
+		document.getElementById("demo1301").innerHTML = 
+			"The type of carName is " + typeof carName;
+		
+		function myFunction() {
+			var carName = "Volvo";
+		}
+	</script>
+	
+	<p id="demo1302"></p>
+	<script>
+		var carName = "Volvo";
+		myFunction();
+		
+		function myFunction() {
+			document.getElementById("demo1302").innerHTML = 
+				"I can display " + carName;
+		}
+	</script>
 	
 	<hr>
 	
