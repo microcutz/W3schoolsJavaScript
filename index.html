@@ -12,9 +12,68 @@
 </head>
 <body>
 	
+	<!--Lesson 16: JS String Methods--->
+	<h1 class="lesson">Lesson 16: JS String Methods</h1>
+	
+	<p id="demo1601">Where is the first 'locate' in this text, and last 'locate.</p>
+	
+
+	<button onclick="locateFunction()">locate</button>
+	
+	<p id="demo1602">gfdgf</p>
+	<p id="demo1603"></p>
+	<p id="demo1604"></p>
+	
+	<script>
+		function locateFunction() {
+			var str = document.getElementById("demo1601").innerHTML;
+			var pos = str.indexOf("locate");
+			var endPos = str.lastIndexOf("locate");
+			var searchPos = str.search("locate");
+			document.getElementById("demo1602").innerHTML = pos;
+			document.getElementById("demo1603").innerHTML = endPos;
+			document.getElementById("demo1604").innerHTML = searchPos;
+		}
+	</script>
+	
+	<hr>
+	
+	<!--Lesson 15: JS Strings--->
+	<h1 class="lesson">Lesson 15: JS Strings</h1>
+	
+	<p id="demo1501"></p>
+	<p id="demo1502"></p>
+	
+	
+	<script>
+		var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+		var x = 'It\'s alright, we are the so-called \"Vikings\" from the north.\r';
+		document.getElementById("demo1501").innerHTML = "Chars A - Z + 0 - 9 = " + txt.length;
+		document.getElementById("demo1502").innerHTML = x;
+	</script>
+	
+	
+	<hr>
+	
 	<!--Lesson 14: JS Events--->
 	<h1 class="lesson">Lesson 14: JS Events</h1>
 		
+	<button onclick="document.getElementById('demo1401').innerHTML = Date()">
+	The times is</button>
+	<p id="demo1401"></p>
+	
+	<button onclick="this.innerHTML=Date()">The time is?</button>
+	
+	<p>Click the button to display the date.</p>
+	<button onclick="displayDate()">The time is?</button>
+	
+	<script>
+		function displayDate() {
+			document.getElementById("demo1402").innerHTML = Date();
+		}
+	</script>
+	
+	<p id="demo1402"></p>
 	
 	<hr>
 	
