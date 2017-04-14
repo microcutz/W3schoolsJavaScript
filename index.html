@@ -20,9 +20,11 @@
 
 	<button onclick="locateFunction()">locate</button>
 	
-	<p id="demo1602">gfdgf</p>
+	<p id="demo1602"></p>
 	<p id="demo1603"></p>
 	<p id="demo1604"></p>
+	
+
 	
 	<script>
 		function locateFunction() {
@@ -30,6 +32,7 @@
 			var pos = str.indexOf("locate");
 			var endPos = str.lastIndexOf("locate");
 			var searchPos = str.search("locate");
+			
 			document.getElementById("demo1602").innerHTML = pos;
 			document.getElementById("demo1603").innerHTML = endPos;
 			document.getElementById("demo1604").innerHTML = searchPos;
@@ -38,12 +41,18 @@
 	
 	<p id="demo1605"></p>
 	<p id="demo1606"></p>
+	<p id="demo1607"></p>
+	<p id="demo1608"></p>
 	<script>
-		var str = "Apple, Banana, Kiwi";
+		var str = "Apple, Banana, Kiwi ";
 		var res = str.slice(7, 13);
-		var resReverse = str.slice(-7, -1);
+		var resReverse = str.slice(-5, -1);
+		var slicePos = str.slice(-13);
+		var subPos = str.substring(7,13);
 		document.getElementById("demo1605").innerHTML = res;
 		document.getElementById("demo1606").innerHTML = resReverse;
+		document.getElementById("demo1607").innerHTML = slicePos;
+		document.getElementById("demo1608").innerHTML = subPos;
 	</script>
 	
 	<hr>
